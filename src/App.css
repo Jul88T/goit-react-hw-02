@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #f9f9f9; /* Легкий сірий фон */
+  background-color: #f9f9f9;
   color: #333;
   padding: 20px;
 }
@@ -25,10 +25,9 @@ body {
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* М'яка тінь */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Опис додатку */
 .description {
   text-align: center;
   margin-bottom: 30px;
@@ -36,9 +35,8 @@ body {
 
 .description h1 {
   font-size: 24px;
-  color: #444; /* Темно-сірий колір для заголовка */
+  color: #444;
 }
-
 /* Кнопки і опції */
 .options {
   display: flex;
@@ -49,7 +47,7 @@ body {
 .options button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #7f8c8d; /* Сірий відтінок */
+  background-color: #7f8c8d;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -58,7 +56,7 @@ body {
 }
 
 .options button:hover {
-  background-color: #95a5a6; /* Світліший сірий при наведенні */
+  background-color: #95a5a6;
 }
 
 /* Стилі для компоненту Feedback */
@@ -66,7 +64,7 @@ body {
   text-align: center;
   padding: 20px;
   border-radius: 8px;
-  background-color: #ecf0f1; /* Легкий сірий фон для статистики */
+  background-color: #ecf0f1;
 }
 
 .feedback ul {
@@ -76,19 +74,19 @@ body {
 .feedback li {
   font-size: 18px;
   margin: 5px 0;
-  color: #2c3e50; /* Темно-сірий для тексту */
+  color: #2c3e50;
 }
 
 .feedback li:last-child {
   font-weight: bold;
-  color: #27ae60; /* Легкий зелений для позитивного відгуку */
+  color: #27ae60;
 }
 
 /* Стилі для Notification (якщо відгуків немає) */
 .notification {
   text-align: center;
   padding: 20px;
-  background-color: #bdc3c7; /* Світло-сірий фон для сповіщення */
+  background-color: #bdc3c7;
   border-radius: 8px;
   color: #fff;
   font-size: 18px;
@@ -100,7 +98,7 @@ body {
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #e2e2e2; /* Світло-сірий фон для кнопки Reset */
+  background-color: #e2e2e2;
   color: #333;
   border: none;
   border-radius: 5px;
@@ -109,5 +107,5 @@ body {
 }
 
 .reset-btn:hover {
-  background-color: #d5d8dc; /* Трохи темніший сірий при наведенні */
+  background-color: #d5d8dc;
 }

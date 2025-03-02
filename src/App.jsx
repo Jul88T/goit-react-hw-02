@@ -18,15 +18,37 @@ function App() {
     }));
   };
 
+  const resetFeedback = () => {
+    setFeedbackStats({
+      good: 0,
+      neutral: 0,
+      bad: 0,
+    });
+  };
+
   const totalFeedback =
     feedbackStats.good + feedbackStats.neutral + feedbackStats.bad;
+  const positiveFeedback =
+    totalFeedback === 0
+      ? 0
+      : Math.round(
+          (feedbackStats.good / (feedbackStats.good + feedbackStats.bad)) * 100
+        );
 
   return (
     <>
       <Description />
-      <Options updateFeedback={updateFeedback} />
+      <Options
+        updateFeedback={updateFeedback}
+        resetFeedback={resetFeedback}
+        totalFeedback={totalFeedback}
+      />
       {totalFeedback > 0 ? (
-        <Feedback feedbackStats={feedbackStats} />
+        <Feedback
+          feedbackStats={feedbackStats}
+          totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback}
+        />
       ) : (
         <Notification />
       )}

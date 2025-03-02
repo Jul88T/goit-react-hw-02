@@ -4,3 +4,110 @@
   padding: 2rem;
   text-align: center;
 }
+/* Загальні стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9; /* Легкий сірий фон */
+  color: #333;
+  padding: 20px;
+}
+
+/* Контейнер для всього додатку */
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* М'яка тінь */
+}
+
+/* Опис додатку */
+.description {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.description h1 {
+  font-size: 24px;
+  color: #444; /* Темно-сірий колір для заголовка */
+}
+
+/* Кнопки і опції */
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.options button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #7f8c8d; /* Сірий відтінок */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #95a5a6; /* Світліший сірий при наведенні */
+}
+
+/* Стилі для компоненту Feedback */
+.feedback {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ecf0f1; /* Легкий сірий фон для статистики */
+}
+
+.feedback ul {
+  list-style-type: none;
+}
+
+.feedback li {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #2c3e50; /* Темно-сірий для тексту */
+}
+
+.feedback li:last-child {
+  font-weight: bold;
+  color: #27ae60; /* Легкий зелений для позитивного відгуку */
+}
+
+/* Стилі для Notification (якщо відгуків немає) */
+.notification {
+  text-align: center;
+  padding: 20px;
+  background-color: #bdc3c7; /* Світло-сірий фон для сповіщення */
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Стилі для кнопки Reset */
+.reset-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e2e2e2; /* Світло-сірий фон для кнопки Reset */
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #d5d8dc; /* Трохи темніший сірий при наведенні */
+}

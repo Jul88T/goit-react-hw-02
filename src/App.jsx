@@ -40,9 +40,7 @@ function App() {
   const positiveFeedback =
     totalFeedback === 0
       ? 0
-      : Math.round(
-          (feedbackStats.good / (feedbackStats.good + feedbackStats.bad)) * 100
-        );
+      : Math.round((feedbackStats.good / totalFeedback) * 100);
 
   return (
     <div className="app">
